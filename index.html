@@ -8,6 +8,20 @@
     <title>Beats Radio</title>
     <meta name="description" content="Listen All Bangladeshi Radio">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/JavaScript">
+
+function killCopy(e){
+return false
+}
+function reEnable(){
+return true
+}
+document.onselectstart=new Function ("return false")
+if (window.sidebar){
+document.onmousedown=killCopy
+document.onclick=reEnable
+}
+</script>
     <!-- ================= Favicon ================== -->
     <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
